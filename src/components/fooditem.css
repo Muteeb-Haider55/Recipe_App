@@ -1,0 +1,41 @@
+.main-container {
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  font-family: Polysans, sans-serif;
+  margin-left: 50px;
+}
+.item-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 17px;
+}
+.item-content {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.item-name {
+  font-size: 1em;
+  font-weight: 600;
+  color: #393e46;
+}
+.item-btn {
+  background-color: #29bb89;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
