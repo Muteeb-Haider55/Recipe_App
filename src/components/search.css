@@ -1,4 +1,4 @@
-.search-container {
+/* .search-container {
   margin: 20px auto;
   width: 300px;
   position: relative;
@@ -11,4 +11,36 @@
   outline: none;
   font-size: 16px;
   color: #393e46;
+} */
+
+.search-container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px; /* Increased for flexibility */
+  padding: 0 15px; /* Mobile side spacing */
+  position: relative;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid #e3e4dc;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  color: #393e46;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-bottom: 2px solid #29bb89; /* Highlight when active */
+}
+
+/* Optional for better touch accessibility */
+@media screen and (max-width: 480px) {
+  .input {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 }

@@ -1,4 +1,4 @@
-.recipe-card {
+/* .recipe-card {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
@@ -33,4 +33,81 @@
 }
 .recipe-instructions li {
   margin: 10px 0px;
+} */
+
+.recipe-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: Polysans, sans-serif;
+  color: #393e46;
+  background-color: #fff;
+}
+
+/* Title */
+.recipe-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Recipe Image */
+.recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Flex details */
+.recipe-details {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* 👈 Make it wrap on smaller screens */
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* Instructions */
+.recipe-instructions {
+  padding: 0px;
+  border-radius: 5px;
+  color: #555;
+}
+
+.recipe-instructions ol {
+  margin-left: 20px; /* Adjusted for better mobile spacing */
+  padding-left: 10px;
+}
+
+.recipe-instructions li {
+  margin: 10px 0px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ✅ Responsive Tweaks */
+@media screen and (max-width: 768px) {
+  .recipe-card {
+    padding: 15px;
+  }
+
+  .recipe-name {
+    font-size: 20px;
+  }
+
+  .recipe-details {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .recipe-instructions ol {
+    margin-left: 10px;
+  }
 }
